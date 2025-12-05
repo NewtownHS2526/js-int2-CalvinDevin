@@ -23,7 +23,17 @@ const obj3 = obj1;
 //    by their values, not references
 // 6. Challenge: Write a function 'compareArrays' that checks if two arrays 
 //    have the same elements in the same order
+   function deepEqual(obj1, obj2,obj3){
+    if (obj1 === obj2)
+    {return true}
+    else if (obj1 !== obj2)
+    {return false}
+    else if (obj1 === obj3)
+    {return true}
+    else 
+    {return false}
 
+   }
 // ============================================================================
 // Problem 2: Chaining Comparison Operators
 // Use comparison operator chaining effectively
@@ -46,6 +56,11 @@ const age = 25;
 //    - If a number is in valid range (0-100)
 //    - If a string length is in valid range (1-50)
 //    - Returns detailed validation result
+function isInRange(value, min, max) {
+    if (min > max) {
+        return false;}
+    {return value >= min && value <= max;}
+}                                   `                `
 
 // ============================================================================
 // Problem 3: Comparison with Null and Undefined
